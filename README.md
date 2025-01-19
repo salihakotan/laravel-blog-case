@@ -1,4 +1,6 @@
 
+![alt text](preview.png)
+
 # Laravel Blog Case
 
 This is a simple blog application built using Laravel. Users can create, view, edit, and delete posts. Categories can also be created and assigned to posts. It provides a basic demonstration of how to set up a blog with user authentication and role-based access control.
