@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-pink-400 text-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -9,21 +9,39 @@
                         <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
                     </a>
                 </div>
-
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
+                <div class="container mx-auto flex justify-between items-center">
+                    <a class="ml-3 text-xl font-bold" href="/">Laravel Blog Case</a>
+                    <nav>
+                        <ul class="ml-10 flex space-x-4">
+                            <li><a href="/" class="hover:text-pink-600">Home</a></li>
+                            <li><a href="/categories" class="hover:text-pink-600">Categories</a></li>
+                            <li><a href="/posts" class="hover:text-pink-600">Posts</a></li>
+                         
+                        </ul>
+                    </nav>
                 </div>
+          
+               
             </div>
 
+         
+              
+            
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
+            <div class="hidden sm:flex sm:items-center sm:ms-6 text-white">
+                  <!-- Navigation Links -->
+                  <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex mr-5 text-white">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Dashboard') }}
+                     
+                     
+                    </x-nav-link>
+
+                </div>
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                            <div>{{ Auth::user()->name }}</div>
+                            {{-- <div>{{ Auth::user()->name }}</div> --}}
 
                             <div class="ms-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -71,12 +89,12 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
-
+      
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="px-4">
-                <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                {{-- <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
+                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div> --}}
             </div>
 
             <div class="mt-3 space-y-1">
