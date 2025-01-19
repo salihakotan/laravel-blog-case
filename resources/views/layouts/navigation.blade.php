@@ -16,6 +16,7 @@
                             <li><a href="/" class="hover:text-pink-600">Home</a></li>
                             <li><a href="/categories" class="hover:text-pink-600">Categories</a></li>
                             <li><a href="/posts" class="hover:text-pink-600">Posts</a></li>
+                            <li><a href={{ route('register') }} class="hover:text-pink-600">Register</a></li>
                          
                         </ul>
                     </nav>

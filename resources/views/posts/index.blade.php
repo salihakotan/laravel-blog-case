@@ -9,11 +9,11 @@
 
 <h1 class="text-5xl mt-5 text-center font-bold">All Posts</h1>
 @auth()
-{{-- <div class="flex justify-end">
-    <button class="bg-pink-500  p-3 rounded-lg text-white my-6 mx-2">
+<div class="flex justify-end">
+    <button class="bg-pink-500  p-3 rounded-lg text-white mb-8">
         <a class="" href="{{ route('posts.create') }}">Create New Post</a>
     </button>
-</div> --}}
+</div>
 @else
 {{-- <p class="text-center">Please login to create a new post</p> --}}
 <div class="flex justify-end">
