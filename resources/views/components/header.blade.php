@@ -6,8 +6,8 @@
                 <li><a href="/" class="hover:text-pink-600">Home</a></li>
                 <li><a href="/categories" class="hover:text-pink-600">Categories</a></li>
                 <li><a href="/posts" class="hover:text-pink-600">Posts</a></li>
-                <li><a href="/about" class="hover:text-pink-600">Login</a></li>
-                <li><a href="/contact" class="hover:text-pink-600">Sign Up</a></li>
+                <li><a  href="{{route('auth.login')}}"  class="hover:text-pink-600">Login</a></li>
+                <li><a href="{{route('auth.register')}}" class="hover:text-pink-600">Sign Up</a></li>
             </ul>
         </nav>
     </div>
